@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Account::</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/mystyle.css">
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+      -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.css">
+    </link>
+</head>
+
+<body>
+
+    <div class="container justify-content-center formcontaine2">
+
+
+        <form action="" method="post">
+            <div class="icon d-flex align-items-center justify-content-center">
+                <!-- <span class="fas fa-user-circle fa-3x" style="color: blue;"></span> -->
+
+
+            </div>
+
+            <h4 align="center" class="mb-5">CREATE AN ACCOUNT</h4>
+
+            <!-- <div class="justify-content-center mb-3">
+                <div class="col col-md-4">
+                   
+                    <select class="form-select form-control" id="membershipType" name="membershipType" required>
+                        <option value="" disabled selected>--Select Title--</option>
+                        <option value="Rotarian">Mr</option>
+                        <option value="Rotaractor">Mrs</option>
+                        <option value="Rotaractor">Miss</option>
+                        <option value="Guest">Dr</option>
+                        <option value="Guest">Prof</option>
+                    </select>
+                </div>
+            </div> -->
+            <div class="row justify-content-center">
+                <div class="col col-md-4">
+                    <div class="form-group ">
+                        <select class="form-select form-control" id="membershipType" name="membershipType" required>
+                            <option value="" disabled selected>--Select Title--</option>
+                            <option value="Rotarian">Mr</option>
+                            <option value="Rotaractor">Mrs</option>
+                            <option value="Rotaractor">Miss</option>
+                            <option value="Guest">Dr</option>
+                            <option value="Guest">Prof</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="col col-md-4">
+                    <div class="form-group">
+
+                    </div>
+                </div>
+
+
+
+
+            </div>
+            <div class="row justify-content-center">
+                <div class="col col-md-4">
+                    <div class="form-group ">
+                        <input type="text" name="surname" id="" placeholder="Surname" class="form-control rounded-left">
+                    </div>
+                </div>
+                <div class="col col-md-4">
+                    <div class="form-group">
+                        <input type="text" name="firstname" id="" placeholder="Other Name"
+                            class="form-control rounded-left">
+                    </div>
+                </div>
+
+
+
+
+            </div>
+            <div class="row justify-content-center">
+                <div class="col col-md-4">
+                    <div class="form-group ">
+                        <input type="text" name="pfno" id="" placeholder="PF Number" class="form-control rounded-left">
+                    </div>
+                </div>
+                <div class="col col-md-4">
+                    <div class="form-group">
+                        <input type="text" name="email" id="" placeholder="Official eMail"
+                            class="form-control rounded-left">
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="row justify-content-center">
+                <div class="col col-md-4">
+                    <div class="form-group">
+                        <input type="text" name="phoneNumber" id="" placeholder="Phone Number"
+                            class="form-control rounded-left">
+                    </div>
+                </div>
+                <div class="col col-md-4">
+
+                    <select class="form-select form-control" id="Gender" name="gender" required>
+                        <option value="" disabled selected>--Select Gender--</option>
+                        <option value="Male">Male</option>
+                        <option value="Female">Female</option>
+
+                    </select>
+                </div>
+
+            </div>
+
+            <div class="row justify-content-center mb-3">
+
+                <div class="col col-md-4">
+
+                    <select onchange="toggleLGA(this);" class="form-select form-control" id="state" name="state"
+                        required>
+                        <option value="" disabled selected>--Select state--</option>
+                        <option value="Abia">Abia</option>
+                        <option value="Adamawa">Adamawa</option>
+                        <option value="AkwaIbom">AkwaIbom</option>
+                        <option value="Anambra">Anambra</option>
+                        <option value="Bauchi">Bauchi</option>
+                        <option value="Bayelsa">Bayelsa</option>
+                        <option value="Benue">Benue</option>
+                        <option value="Borno">Borno</option>
+                        <option value="Cross River">Cross River</option>
+                        <option value="Delta">Delta</option>
+                        <option value="Ebonyi">Ebonyi</option>
+                        <option value="Edo">Edo</option>
+                        <option value="Ekiti">Ekiti</option>
+                        <option value="Enugu">Enugu</option>
+                        <option value="FCT">FCT</option>
+                        <option value="Gombe">Gombe</option>
+                        <option value="Imo">Imo</option>
+                        <option value="Jigawa">Jigawa</option>
+                        <option value="Kaduna">Kaduna</option>
+                        <option value="Kano">Kano</option>
+                        <option value="Katsina">Katsina</option>
+                        <option value="Kebbi">Kebbi</option>
+                        <option value="Kogi">Kogi</option>
+                        <option value="Kwara">Kwara</option>
+                        <option value="Lagos">Lagos</option>
+                        <option value="Nasarawa">Nasarawa</option>
+                        <option value="Niger">Niger</option>
+                        <option value="Ogun">Ogun</option>
+                        <option value="Ondo">Ondo</option>
+                        <option value="Osun">Osun</option>
+                        <option value="Oyo">Oyo</option>
+                        <option value="Plateau">Plateau</option>
+                        <option value="Rivers">Rivers</option>
+                        <option value="Sokoto">Sokoto</option>
+                        <option value="Taraba">Taraba</option>
+                        <option value="Yobe">Yobe</option>
+                        <option value="Zamfara">Zamafara</option>
+
+                    </select>
+                </div>
+
+                <div class="col col-md-4">
+
+                    <select class="form-control select-lga" id="lga" name="lga" required>
+
+
+
+                    </select>
+                </div>
+
+            </div>
+
+
+            <div class="row justify-content-center">
+
+                <div class="col col-md-4">
+
+                    <select class="form-select form-control" id="college" name="college" required>
+                        <option value="" disabled selected>--Select College--</option>
+
+                        <option value="COITED">COITED</option>
+                        <option value="COSSED">COSSED</option>
+
+
+                    </select>
+                </div>
+
+                <div class="col col-md-4">
+
+                    <select class="form-select form-control select-dpt" id="dpt" name="dpt" required>
+
+                        B.A. Ed. History and Diplomatic Studies
+                        B.A. Music
+                        B.A. Ed. Music
+                        B.A. Theatre and Performing Arts
+                        B.A. Fine Arts
+                        B.A. Ed. Fine Arts
+                        B.A. Islamic Studies
+                        B.A. Ed. Islamic Studies
+                        B.A. Christian Religious Studies
+                        B.A. Ed. Christian Religious Studies
+                        B.A. History and Diplomatic Studies
+                        B.Sc. Ed. Statistics
+                        B.Sc. Statistics
+                        B.Sc. Ed. Integrated Sciences
+                        B.Sc. Ed. Human Kinetics
+                        B.Sc. Ed. Health Education
+                        B.Sc. Mathematics
+                        B.Sc. Ed. Mathematics
+                        B.Sc. Physics
+                        B.Sc. Ed. Biology
+                        B.Sc. Biology
+                        B.Sc. Ed. Chemistry
+                        B.Sc. Chemistry
+                        B.Sc. Ed. Physics
+                        B.Sc. Ed. Automobile Technology
+                        BLIS. Library and Information Science
+                        B.Sc. Ed. Metalwork Technology
+                        B.Sc. Ed. Electrical Technology Education
+                        B.Sc. Ed. Woodwork Technology
+                        B.Sc. Ed. Educational Technology
+                        B.Sc. Computer Sciences
+                        B.Sc. Ed. Computer Sciences
+                        B.Sc. Ed. Entrepreneurship
+                        B.Sc. Accounting
+                        B.Sc. Ed. Accounting
+                        B.Sc. Ed. Secretariat Administration
+                        B.Sc. Ed. Business Education
+                        B.Sc. Home Economics
+                        B.Sc. Ed. Home Economics
+                        B.Sc. Ed. Agriculture Science
+                        B.Sc. Ed. Social Studies
+                        B.Sc. Transport Management
+                        B.Sc. Ed. Geography
+                        B.Sc. Geography
+                        B.Sc. Political Science
+                        B.Sc. Political Science
+                        B.Sc. Ed. Political Science
+                        B.Ed Educational Management
+                        B.Sc. Economics
+                        B.Sc. Ed. Economics
+                        B.Ed. Guidance and Counselling
+                        B.Ed. Adult Education
+                        B.Ed. Special Education
+                        B. Ed. Early Childhood Care Education
+                        B.Ed. Primary Education Studies
+                        B.A. Igbo
+                        B.A. Ed. Igbo
+                        B.A. Hausa
+                        B.A. Ed. Hausa
+                        B.A. Yoruba
+                        B.A. Ed. Yoruba
+                        B.A. Ed. Arabic
+                        B.A. French
+                        B.A. Ed. French
+                        B.A. English Language
+                        B.A. Ed. English Language
+                        B.A. Arabic
+
+                    </select>
+                </div>
+
+            </div>
+
+            <div class="mt-5 col col-md-4  d-block mx-auto form-group">
+                <button type="submit" class="btn btn-primary ">Register</button>
+            </div>
+
+
+    </div>
+
+
+
+    </form>
+
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+    </form>
+
+
+
+
+
+
+    </form>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="js/lga.js"></script>
+</body>
+
+</html>
